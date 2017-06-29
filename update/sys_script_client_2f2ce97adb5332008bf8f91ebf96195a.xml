@@ -19,20 +19,10 @@
 		}else{
 			return true;
 		}
-		
-		
-	}else if(g_form.getActionName()=='close_not_a_bsi'){
-		
-		var confirmCloseBSI = confirm('Are you sure you wish to mark this record as closed?');
-		if(confirmCloseBSI == false){
-			return false;
-		}else{
-			return true;
-		}
-		
 	}
+}
 	
-}]]></script>
+	]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>danpal01</sys_created_by>
         <sys_created_on>2017-06-15 16:23:25</sys_created_on>
@@ -40,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f2ce97adb5332008bf8f91ebf96195a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>BSI Confirm Prompts</sys_name>
         <sys_overrides/>
         <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
@@ -49,7 +39,7 @@
         <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
         <sys_update_name>sys_script_client_2f2ce97adb5332008bf8f91ebf96195a</sys_update_name>
         <sys_updated_by>danpal01</sys_updated_by>
-        <sys_updated_on>2017-06-27 20:33:45</sys_updated_on>
+        <sys_updated_on>2017-06-29 14:49:06</sys_updated_on>
         <table>x_131279_business_bsi_verify</table>
         <type>onSubmit</type>
         <ui_type>0</ui_type>

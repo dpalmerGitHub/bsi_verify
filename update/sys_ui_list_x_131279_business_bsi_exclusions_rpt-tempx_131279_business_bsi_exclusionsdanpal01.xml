@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_131279_business_bsi_exclusions" version="2" view="rpt-tempx_131279_business_bsi_exclusionsdanpal01">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_131279_business_bsi_exclusions" element="NULL" name="x_131279_business_bsi_exclusions" parent="NULL" relationship="NULL" sys_domain="global" view="b1bbdd1bdb6332008bf8f91ebf9619cc">f1bbd95bdb6332008bf8f91ebf9619ed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-29 14:43:26</sys_created_on>
+            <sys_id>bdbbd95bdb6332008bf8f91ebf9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-29 14:43:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>created_by</element>
+            <list_id display_value="x_131279_business_bsi_exclusions" element="NULL" name="x_131279_business_bsi_exclusions" parent="NULL" relationship="NULL" sys_domain="global" view="b1bbdd1bdb6332008bf8f91ebf9619cc">f1bbd95bdb6332008bf8f91ebf9619ed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-29 14:43:26</sys_created_on>
+            <sys_id>b5bbd95bdb6332008bf8f91ebf9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-29 14:43:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>configuration_item_exclusion</element>
+            <list_id display_value="x_131279_business_bsi_exclusions" element="NULL" name="x_131279_business_bsi_exclusions" parent="NULL" relationship="NULL" sys_domain="global" view="b1bbdd1bdb6332008bf8f91ebf9619cc">f1bbd95bdb6332008bf8f91ebf9619ed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-29 14:43:26</sys_created_on>
+            <sys_id>39bbd95bdb6332008bf8f91ebf9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-29 14:43:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>subcategory_exclusion</element>
+            <list_id display_value="x_131279_business_bsi_exclusions" element="NULL" name="x_131279_business_bsi_exclusions" parent="NULL" relationship="NULL" sys_domain="global" view="b1bbdd1bdb6332008bf8f91ebf9619cc">f1bbd95bdb6332008bf8f91ebf9619ed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-29 14:43:26</sys_created_on>
+            <sys_id>b9bbd95bdb6332008bf8f91ebf9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-29 14:43:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="x_131279_business_bsi_exclusions" element="NULL" name="x_131279_business_bsi_exclusions" parent="NULL" relationship="NULL" sys_domain="global" view="b1bbdd1bdb6332008bf8f91ebf9619cc">f1bbd95bdb6332008bf8f91ebf9619ed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-29 14:43:26</sys_created_on>
+            <sys_id>3dbbd95bdb6332008bf8f91ebf9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-29 14:43:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_131279_business_bsi_exclusions" element="NULL" name="x_131279_business_bsi_exclusions" parent="NULL" relationship="NULL" sys_domain="global" view="b1bbdd1bdb6332008bf8f91ebf9619cc">f1bbd95bdb6332008bf8f91ebf9619ed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-29 14:43:26</sys_created_on>
+            <sys_id>bdbbd95bdb6332008bf8f91ebf9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-29 14:43:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_131279_business_bsi_exclusions</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-29 14:43:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1bbd95bdb6332008bf8f91ebf9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-29 14:43:26</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt-tempx_131279_business_bsi_exclusionsdanpal01" name="rpt-tempx_131279_business_bsi_exclusionsdanpal01">b1bbdd1bdb6332008bf8f91ebf9619cc</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
