@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>closed</field>
+        <global>true</global>
+        <messages/>
+        <name>BSI Confirm Prompts</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	if(g_form.getActionName()=='create_bsi'){
+		var confirmBSI = confirm('Are you sure you wish to create a BSI ?');
+		if(confirmBSI == false){
+			return false;
+		}else{
+			return true;
+		}
+		
+		
+	}else if(g_form.getActionName()=='close_not_a_bsi'){
+		
+		var confirmCloseBSI = confirm('Are you sure you wish to mark this record as closed?');
+		if(confirmCloseBSI == false){
+			return false;
+		}else{
+			return true;
+		}
+		
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 16:23:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f2ce97adb5332008bf8f91ebf96195a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>BSI Confirm Prompts</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+        <sys_update_name>sys_script_client_2f2ce97adb5332008bf8f91ebf96195a</sys_update_name>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-27 20:33:45</sys_updated_on>
+        <table>x_131279_business_bsi_verify</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

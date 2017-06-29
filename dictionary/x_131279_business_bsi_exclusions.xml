@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="BSI Exclusions" max_length="40" name="x_131279_business_bsi_exclusions" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Category" max_length="32" name="category" reference="sc_category" type="reference"/>
+        <element label="Configuration Item Exclusion" mandatory="true" max_length="32" name="configuration_item_exclusion" reference="cmdb_ci" type="reference"/>
+        <element label="Created By" max_length="32" name="created_by" read_only="true" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Created On" max_length="40" name="created_on" read_only="true" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="Incidents" max_length="32" name="incidents" reference="incident" type="reference"/>
+        <element choice="1" label="Subcategory Exclusion" mandatory="true" max_length="40" name="subcategory_exclusion" type="choice">
+            <choice>
+                <element label="*" sequence="0" value="*"/>
+                <element label="Email" sequence="1" value="Email"/>
+                <element label="Antivirus" sequence="2" value="Antivirus"/>
+                <element label="Account Lock" sequence="3" value="Account Lock"/>
+                <element label="Password Reset" sequence="4" value="Password Reset"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="configuration_item_exclusion"/>
+        </index>
+        <index name="index2">
+            <element name="incidents"/>
+        </index>
+        <index name="index3">
+            <element name="category"/>
+        </index>
+        <index name="index4">
+            <element name="created_by"/>
+        </index>
+    </element>
+</database>

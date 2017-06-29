@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="subcategory_exclusion" table="x_131279_business_bsi_exclusions" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subcategory_exclusion</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>*</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_exclusions</name>
+            <sequence>0</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-23 13:41:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7045219dba732008bf8f91ebf9619d6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:07:25</sys_updated_on>
+            <value>*</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subcategory_exclusion</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Email</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_exclusions</name>
+            <sequence>1</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-23 03:49:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c9c88d5dba732008bf8f91ebf9619ff</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:07:25</sys_updated_on>
+            <value>Email</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subcategory_exclusion</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Antivirus</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_exclusions</name>
+            <sequence>2</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-23 03:49:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>889cc8d5dba732008bf8f91ebf961900</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:07:25</sys_updated_on>
+            <value>Antivirus</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subcategory_exclusion</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Sale Issue</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_exclusions</name>
+            <sequence>2</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-27 13:03:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>53a1f66adb2332008bf8f91ebf96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-27 13:03:32</sys_updated_on>
+            <value>Sale Issue</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subcategory_exclusion</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Account Lock</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_exclusions</name>
+            <sequence>3</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-27 13:03:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d7a1f66adb2332008bf8f91ebf96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-27 13:03:32</sys_updated_on>
+            <value>Account Lock</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subcategory_exclusion</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Password Reset</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_exclusions</name>
+            <sequence>4</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-27 13:03:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>93a1f66adb2332008bf8f91ebf96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-27 13:03:32</sys_updated_on>
+            <value>Password Reset</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>subcategory_exclusion</element>
+            <name>x_131279_business_bsi_exclusions</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-23 03:49:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>449cc8d5dba732008bf8f91ebf961900</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_name>subcategory_exclusion</sys_name>
+            <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+            <sys_update_name>sys_choice_x_131279_business_bsi_exclusions_subcategory_exclusion</sys_update_name>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-27 13:03:51</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

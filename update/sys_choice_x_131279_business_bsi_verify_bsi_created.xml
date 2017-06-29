@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="bsi_created" table="x_131279_business_bsi_verify" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>bsi_created</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>BSI Already Created</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_verify</name>
+            <sequence>0</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-22 15:55:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f429edc9db6332008bf8f91ebf961953</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-22 15:58:22</sys_updated_on>
+            <value>BSI Already Created</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>bsi_created</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BSI Created</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_verify</name>
+            <sequence>0</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-26 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>659c6196db2332008bf8f91ebf961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:23:12</sys_updated_on>
+            <value>BSI Created</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>bsi_created</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BSI Previously Created</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_verify</name>
+            <sequence>1</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-22 15:58:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7b9edc9db6332008bf8f91ebf961929</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:23:12</sys_updated_on>
+            <value>BSI Previously Created</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>bsi_created</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_verify</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-06 15:11:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c3a503f7db0332008bf8f91ebf961932</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:23:12</sys_updated_on>
+            <value>No</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>bsi_created</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not A BSI</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_verify</name>
+            <sequence>2</sequence>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-26 13:23:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e99c6196db2332008bf8f91ebf961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:23:12</sys_updated_on>
+            <value>Not A BSI</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>bsi_created</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_verify</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-06 15:11:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>47a503f7db0332008bf8f91ebf961931</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:23:12</sys_updated_on>
+            <value>Yes</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>bsi_created</element>
+            <name>x_131279_business_bsi_verify</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-06 15:11:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8fa503f7db0332008bf8f91ebf961931</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_name>bsi_created</sys_name>
+            <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+            <sys_update_name>sys_choice_x_131279_business_bsi_verify_bsi_created</sys_update_name>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 13:23:12</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

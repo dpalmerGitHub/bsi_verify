@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>bsi_previously_created</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Close-BSI Previously Created</name>
+        <onclick>closeRecord()</onclick>
+        <order>300</order>
+        <script><![CDATA[function closeRecord(){
+g_form.setValue('status','BSI Previously Created');
+g_form.setValue("closed_by",g_user.userID);
+g_form.save();
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-22 16:02:48</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cf2ae14ddb6332008bf8f91ebf9619c4</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Close-BSI Previously Created</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+        <sys_update_name>sys_ui_action_cf2ae14ddb6332008bf8f91ebf9619c4</sys_update_name>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-29 14:31:01</sys_updated_on>
+        <table>x_131279_business_bsi_verify</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

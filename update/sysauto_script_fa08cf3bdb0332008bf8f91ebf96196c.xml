@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>BSI_Verify</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 00:03:00</run_period>
+        <run_start>2017-06-06 15:22:16</run_start>
+        <run_time>1970-01-01 05:00:10</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[//gs.info("BSI Verify Running Successsfully");
+var bsiVerify;
+var exclusions;
+var incidents;
+var obj = {}; //contains configuration item and subcategory of trigger incidents
+var objExc = {}; //contains bsi exclusion configuraiton item and subcategory
+var excludeAll=[]; /*contains bsi exclusion configuraiton item in which all subcategories are excluded*/
+		
+		/*Query Exclusions table and create an object which contains the configuration item and subcategory of each exclusion record*/
+		exclusions = new GlideRecord("x_131279_business_bsi_exclusions");
+		exclusions.addActiveQuery();
+		exclusions.query();
+		while (exclusions.next()) {
+			if(exclusions.getValue('subcategory_exclusion')=="*"){
+				excludeAll.push(exclusions.getValue('configuration_item_exclusion'));
+			}
+			if (objExc[exclusions.getElement("configuration_item_exclusion").getDisplayValue()]) {
+				objExc[exclusions.getElement("configuration_item_exclusion").getDisplayValue()][exclusions.getValue("subcategory_exclusion").toLowerCase()] = exclusions.getValue("subcategory_exclusion").toLowerCase();
+			} else {
+				objExc[exclusions.getElement("configuration_item_exclusion").getDisplayValue()] = {};
+					objExc[exclusions.getElement("configuration_item_exclusion").getDisplayValue()][exclusions.getValue("subcategory_exclusion").toLowerCase()] = exclusions.getValue("subcategory_exclusion").toLowerCase();
+				}
+			}
+// Uncomment to view object in Application Logs gs.info(JSON.stringify(objExc));
+
+/*Query Incident table for all active records created today in which the status of BSI Related Incident field is empty, to prevent duplicate records from being inserted, as well as only look at incidents that do not contain the CI on the BSI Exclusion table in which all subcategories are excluded. This creates an object containing the CI as a property,which is itself an object containing the subcategory as its property, which is itself an array containing the incidents related to the matching CI and subcategory */
+			incidents = new GlideRecord("incident");
+			incidents.addEncodedQuery('active=true^sys_created_onONToday@javascript:gs.daysAgoStart(0)@javascript:gs.daysAgoEnd(0)^u_bsi_related_incident=');
+			incidents.addQuery("cmdb_ci","NOT IN",excludeAll);
+			incidents.query();
+			
+			while (incidents.next()) {
+				
+				if (objExc[incidents.getElement("cmdb_ci").getDisplayValue()] && objExc[incidents.getElement("cmdb_ci").getDisplayValue()][incidents.getValue("subcategory")]) {
+					continue;
+				}
+				if (obj[incidents.getElement('cmdb_ci').getDisplayValue()]) {
+					if (obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')]) {
+						obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')].push(incidents.getUniqueValue());
+					} else {
+						obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')] = [];
+						obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')].push(incidents.getUniqueValue());
+						
+					}
+				} else {
+					obj[incidents.getElement('cmdb_ci').getDisplayValue()] = {};
+						obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')] = [];
+						obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')].push(incidents.getUniqueValue());
+					}
+					
+					
+				}
+
+//gs.info(JSON.stringify(obj));
+				
+/*Insert verification record for first three incidents in array. There is a business rule that runs before insert on the BSI Verification form, which triggers an update to the incident records associated with the verification ticket, in which the status of the BSI Related Incident field is changed to Pending Review*/				
+				var item;
+				var itemSubs;
+				
+				for (item in obj) {
+					for (itemSubs in obj[item]) {
+						if (obj[item][itemSubs].length >= 3) {
+							bsiVerify = new GlideRecord("x_131279_business_bsi_verify");
+							bsiVerify.setValue("status", "Pending Review");
+							bsiVerify.setValue("incident_1", obj[item][itemSubs][0]);
+							bsiVerify.setValue("incident_2", obj[item][itemSubs][1]);
+							bsiVerify.setValue("incident_3", obj[item][itemSubs][2]);
+							bsiVerify.insert();
+						}
+						
+						
+					}
+					
+				}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-06 15:37:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fa08cf3bdb0332008bf8f91ebf96196c</sys_id>
+        <sys_mod_count>710</sys_mod_count>
+        <sys_name>BSI_Verify</sys_name>
+        <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+        <sys_update_name>sysauto_script_fa08cf3bdb0332008bf8f91ebf96196c</sys_update_name>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-27 20:15:09</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

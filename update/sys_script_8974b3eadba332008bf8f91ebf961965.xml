@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BSI Verify</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+var bsiVerify;
+var exclusions;
+var incidents;
+var obj = {};
+var objExc = {};
+var excludeAll=[];
+
+exclusions = new GlideRecord("x_131279_business_bsi_exclusions");
+exclusions.addActiveQuery();
+exclusions.query();
+while (exclusions.next()) {
+	if(exclusions.getValue('subcategory_exclusion')=="*"){
+		excludeAll.push(exclusions.getValue('configuration_item_exclusion'));
+	}
+    if (objExc[exclusions.getElement("configuration_item_exclusion").getDisplayValue()]) {
+        objExc[exclusions.getElement("configuration_item_exclusion").getDisplayValue()][exclusions.getValue("subcategory_exclusion").toLowerCase()] = exclusions.getValue("subcategory_exclusion").toLowerCase();
+    } else {
+        objExc[exclusions.getElement("configuration_item_exclusion").getDisplayValue()] = {};
+        objExc[exclusions.getElement("configuration_item_exclusion").getDisplayValue()][exclusions.getValue("subcategory_exclusion").toLowerCase()] = exclusions.getValue("subcategory_exclusion").toLowerCase();
+    }
+}
+
+incidents = new GlideRecord("incident");
+incidents.addEncodedQuery('active=true^sys_created_onONToday@javascript:gs.daysAgoStart(0)@javascript:gs.daysAgoEnd(0)^u_bsi_related_incident=');
+incidents.addQuery("cmdb_ci","NOT IN",excludeAll);
+incidents.query();
+
+while (incidents.next()) {
+
+    if (objExc[incidents.getElement("cmdb_ci").getDisplayValue()] && objExc[incidents.getElement("cmdb_ci").getDisplayValue()][incidents.getValue("subcategory")]) {
+        continue;
+    }
+    if (obj[incidents.getElement('cmdb_ci').getDisplayValue()]) {
+        if (obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')]) {
+            obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')].push(incidents.getUniqueValue());
+        } else {
+            obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')] = [];
+            obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')].push(incidents.getUniqueValue());
+
+        }
+    } else {
+        obj[incidents.getElement('cmdb_ci').getDisplayValue()] = {};
+        obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')] = [];
+        obj[incidents.getElement('cmdb_ci').getDisplayValue()][incidents.getValue('subcategory')].push(incidents.getUniqueValue());
+    }
+
+
+}
+
+
+var item;
+var itemSubs;
+
+for (item in obj) {
+    for (itemSubs in obj[item]) {
+        if (obj[item][itemSubs].length >= 3) {
+            bsiVerify = new GlideRecord("x_131279_business_bsi_verify");
+			bsiVerify.setValue("status", "Pending Review");
+            bsiVerify.setValue("incident_1", obj[item][itemSubs][0]);
+            bsiVerify.setValue("incident_2", obj[item][itemSubs][1]);
+            bsiVerify.setValue("incident_3", obj[item][itemSubs][2]);
+            bsiVerify.insert();
+        }
+
+
+    }
+
+}
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-27 17:57:55</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8974b3eadba332008bf8f91ebf961965</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>BSI Verify</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+        <sys_update_name>sys_script_8974b3eadba332008bf8f91ebf961965</sys_update_name>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-27 19:58:49</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=8974b3eadba332008bf8f91ebf961965"/>
+</record_update>

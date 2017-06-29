@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="trigger_configuration_item" label="Trigger Configuration Item" language="en" table="x_131279_business_bsi_verify">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>trigger_configuration_item</element>
+            <help/>
+            <hint/>
+            <label>Trigger Configuration Item</label>
+            <language>en</language>
+            <name>x_131279_business_bsi_verify</name>
+            <plural>Trigger Configuration Items</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>danpal01</sys_created_by>
+            <sys_created_on>2017-06-26 14:42:13</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>4baebd12db6332008bf8f91ebf961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Trigger Configuration Item</sys_name>
+            <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+            <sys_update_name>sys_documentation_x_131279_business_bsi_verify_trigger_configuration_item_en</sys_update_name>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-26 14:42:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="BSI Verification" max_length="40" name="x_131279_business_bsi_verify" type="collection">
+        <element label="BSI Reference Number" max_length="32" name="bsi_reference_number" reference="x_131279_business_bsi" type="reference"/>
+        <element label="Closed" max_length="40" name="closed" read_only="true" type="glide_date_time"/>
+        <element label="Closed By" max_length="32" name="closed_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Configuration Item" max_length="32" name="configuration_item" reference="cmdb_ci" type="reference"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Created On" max_length="40" name="created_on" read_only="true" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="Enter Unverified BSI Number" max_length="32" name="enter_unverified_bsi_number" reference="x_131279_business_bsi" type="reference"/>
+        <element label="Incident 1" max_length="32" name="incident_1" read_only="true" reference="incident" type="reference"/>
+        <element label="Incident 2" max_length="32" name="incident_2" read_only="true" reference="incident" type="reference"/>
+        <element label="Incident 3" max_length="32" name="incident_3" read_only="true" reference="incident" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" read_only="true" type="string">
+            <choice>
+                <element label="Pending Review" sequence="0" value="Pending Review"/>
+                <element label="BSI Created" sequence="1" value="BSI Created"/>
+                <element label="Not A BSI" sequence="2" value="Not A BSI"/>
+                <element label="BSI Previously Created" sequence="3" value="BSI Previously Created"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Subcategory" max_length="40" name="subcategory" type="string"/>
+        <element label="Trigger Configuration Item" max_length="32" name="trigger_configuration_item" read_only="true" reference="cmdb_ci" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Trigger Subcategory" max_length="40" name="trigger_subcategory" read_only="true" type="string"/>
+        <index name="index">
+            <element name="trigger_configuration_item"/>
+        </index>
+        <index name="index2">
+            <element name="incident_2"/>
+        </index>
+        <index name="index3">
+            <element name="configuration_item"/>
+        </index>
+        <index name="index4">
+            <element name="incident_1"/>
+        </index>
+        <index name="index5">
+            <element name="incident_3"/>
+        </index>
+        <index name="index6">
+            <element name="bsi_reference_number"/>
+        </index>
+        <index name="index7">
+            <element name="enter_unverified_bsi_number"/>
+        </index>
+        <index name="index8">
+            <element name="closed_by"/>
+        </index>
+    </element>
+</database>

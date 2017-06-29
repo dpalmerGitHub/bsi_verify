@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"subflows":[],"stages":{"f4c85972db5332008bf8f91ebf961907":{"stageId":"f4c85972db5332008bf8f91ebf961907","order":500,"duration":"","name":"BSI Submitted","value":"bsi_submitted"}},"activities":{"74e85972db5332008bf8f91ebf9619fb":"f4c85972db5332008bf8f91ebf961907"},"ends":["34c85972db5332008bf8f91ebf961905"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition table="x_131279_business_bsi">status=Submitted^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Submitted"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>f0c85972db5332008bf8f91ebf961904,74e85972db5332008bf8f91ebf9619fb,34c85972db5332008bf8f91ebf961905</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>f0c85972db5332008bf8f91ebf961904,74e85972db5332008bf8f91ebf9619fb,34c85972db5332008bf8f91ebf961905</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>BSI-Scoped</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">f0c85972db5332008bf8f91ebf961904</start>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>cea8d9bedb1332008bf8f91ebf9619eb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 15:01:21</sys_updated_on>
+        <table>x_131279_business_bsi</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="BSI-Scoped">f8c85972db5332008bf8f91ebf961903</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>BSI-Scoped</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f8c85972db5332008bf8f91ebf961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BSI-Scoped</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+        <sys_update_name>wf_workflow_f8c85972db5332008bf8f91ebf961903</sys_update_name>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+        <table>x_131279_business_bsi</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>BSI Closed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>400</order>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>74c85972db5332008bf8f91ebf961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+        <value>bsi_closed</value>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>BSI Submitted</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>500</order>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>f4c85972db5332008bf8f91ebf961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+        <value>bsi_submitted</value>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>BSI Under Investigation</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>600</order>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>78c85972db5332008bf8f91ebf961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+        <value>bsi_under_investigation</value>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Notify Management</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>200</order>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>70c85972db5332008bf8f91ebf961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+        <value>notification_management</value>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Update Trigger Incidents</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>300</order>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>f0c85972db5332008bf8f91ebf961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+        <value>update_trigger_incidents</value>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>f0c85972db5332008bf8f91ebf961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f0c85972db5332008bf8f91ebf961904"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">f0c85972db5332008bf8f91ebf961904</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>7cc85972db5332008bf8f91ebf961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>BSI Submitted</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="BSI Submitted">f4c85972db5332008bf8f91ebf961907</stage>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>74e85972db5332008bf8f91ebf9619fb</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 15:00:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+        <x>401</x>
+        <y>59</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=74e85972db5332008bf8f91ebf9619fb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>24195972db5332008bf8f91ebf9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>64195972db5332008bf8f91ebf9619a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:28</sys_updated_on>
+        <value>123c7436db1332008bf8f91ebf9619bf</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>68195972db5332008bf8f91ebf9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value>BSI ${number} has been opened</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>ac195972db5332008bf8f91ebf9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value>Please review ${number}: ${URI}</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>e0195972db5332008bf8f91ebf9619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>ec195972db5332008bf8f91ebf9619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>64195972db5332008bf8f91ebf9619a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:28</sys_updated_on>
+        <value>123c7436db1332008bf8f91ebf9619bf</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>e0195972db5332008bf8f91ebf9619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>68195972db5332008bf8f91ebf9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value>BSI ${number} has been opened</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>ac195972db5332008bf8f91ebf9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value>Please review ${number}: ${URI}</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>ec195972db5332008bf8f91ebf9619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74e85972db5332008bf8f91ebf9619fb</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>24195972db5332008bf8f91ebf9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="BSI Submitted">74e85972db5332008bf8f91ebf9619fb</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:12</sys_created_on>
+        <sys_id>2c195972db5332008bf8f91ebf9619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:12</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>34c85972db5332008bf8f91ebf961905</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 15:00:06</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+        <x>895</x>
+        <y>396</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=34c85972db5332008bf8f91ebf961905"/>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7cc85972db5332008bf8f91ebf961904</condition>
+        <from display_value="Begin">f0c85972db5332008bf8f91ebf961904</from>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:59:39</sys_created_on>
+        <sys_id>0f299972db5332008bf8f91ebf96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:59:39</sys_updated_on>
+        <to display_value="BSI Submitted">74e85972db5332008bf8f91ebf9619fb</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2c195972db5332008bf8f91ebf9619a2</condition>
+        <from display_value="BSI Submitted">74e85972db5332008bf8f91ebf9619fb</from>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 15:00:00</sys_created_on>
+        <sys_id>84499972db5332008bf8f91ebf96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 15:00:00</sys_updated_on>
+        <to display_value="End">34c85972db5332008bf8f91ebf961905</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>danpal01</sys_created_by>
+        <sys_created_on>2017-06-15 14:57:51</sys_created_on>
+        <sys_id>34c85972db5332008bf8f91ebf961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:57:51</sys_updated_on>
+        <workflow_version display_value="BSI-Scoped">cea8d9bedb1332008bf8f91ebf9619eb</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=f8c85972db5332008bf8f91ebf961903^sys_id!=cea8d9bedb1332008bf8f91ebf9619eb">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

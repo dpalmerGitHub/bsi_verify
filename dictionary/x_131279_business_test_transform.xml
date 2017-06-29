@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Test Transform" max_length="40" name="x_131279_business_test_transform" type="collection">
+        <element attributes="import_attribute_name=Dept,edge_encryption_enabled=true" label="Dept" max_length="49" name="u_dept" type="string"/>
+        <element attributes="import_attribute_name=Email Notification,edge_encryption_enabled=true" label="Email Notification" max_length="40" name="u_email_notification" type="string"/>
+        <element attributes="import_attribute_name=Incident/Type of Issue,edge_encryption_enabled=true" label="Incident/Type of Issue" max_length="186" name="u_incident_type_of_issue" type="string"/>
+        <element attributes="import_attribute_name=Name of Weekly Report,edge_encryption_enabled=true" label="Name of Weekly Report" max_length="128" name="u_name_of_weekly_report" type="string"/>
+        <element attributes="import_attribute_name=Report,edge_encryption_enabled=true" label="Report" max_length="162" name="u_report" type="string"/>
+        <element attributes="import_attribute_name=Specific Distro,edge_encryption_enabled=true" label="Specific Distro" max_length="132" name="u_specific_distro" type="string"/>
+    </element>
+</database>

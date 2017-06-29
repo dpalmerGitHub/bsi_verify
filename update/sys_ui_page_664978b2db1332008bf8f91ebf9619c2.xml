@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var button = document.getElementById('button');
+console.log('button made');
+button.onclick = function(){
+	console.log('button clicked');
+var requestBody = ""; 
+
+var client=new XMLHttpRequest();
+client.open("get","https://dev37520.service-now.com/api/now/table/x_131279_business_bsi?sysparm_limit=1");
+
+client.setRequestHeader('Accept','application/json');
+client.setRequestHeader('Content-Type','application/json');
+
+//Eg. UserName="admin", Password="admin" for this code sample.
+client.setRequestHeader('Authorization', 'Basic '+btoa('danpal01'+':'+'admin'));
+
+client.onreadystatechange = function() { 
+	if(this.readyState == this.DONE) {
+		document.getElementById("response").innerHTML=this.status + this.response; 
+		var respond = JSON.parse(this.response);
+		document.getElementById('result').innerHTML = JSON.stringify(respond.result[0].number);
+	}
+}; 
+client.send(requestBody);
+	
+	
+
+};]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_131279_business_Rest API Testing.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+	
+		<button id = 'button' type='button'>Submit Button</button>
+		<p id = 'response'></p>
+	<p id = 'result'></p>
+
+
+</j:jelly>]]></html>
+        <name>Rest API Testing</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-15 12:40:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>664978b2db1332008bf8f91ebf9619c2</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Rest API Testing</sys_name>
+        <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+        <sys_update_name>sys_ui_page_664978b2db1332008bf8f91ebf9619c2</sys_update_name>
+        <sys_updated_by>danpal01</sys_updated_by>
+        <sys_updated_on>2017-06-15 13:21:28</sys_updated_on>
+    </sys_ui_page>
+</record_update>

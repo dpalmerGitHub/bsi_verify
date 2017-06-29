@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="04b43116db5732008bf8f91ebf96190b" sys_domain="global" table="x_131279_business_bsi_verify" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-14 03:42:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c8b43116db5732008bf8f91ebf96190d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_131279_business_bsi_verify" name="x_131279_business_bsi_verify" sys_domain="global" view="Default view">04b43116db5732008bf8f91ebf96190b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi_verify" sys_domain="global" view="Default view">1fc2c777db0332008bf8f91ebf9619a5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-14 03:42:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-14 03:42:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4b43116db5732008bf8f91ebf96190e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_131279_business_bsi_verify" name="x_131279_business_bsi_verify" sys_domain="global" view="Default view">04b43116db5732008bf8f91ebf96190b</sys_ui_form>
+            <sys_ui_section caption="Verify Incidents Below" display_value="Verify Incidents Below" name="x_131279_business_bsi_verify" sys_domain="global" view="Default view">c0b43116db5732008bf8f91ebf96190a</sys_ui_section>
+            <sys_updated_by>danpal01</sys_updated_by>
+            <sys_updated_on>2017-06-15 18:23:33</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_131279_business_bsi_verify</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-06-14 03:42:54</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>04b43116db5732008bf8f91ebf96190b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_131279_business_bsi_verify</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
+            <sys_update_name>sys_ui_form_sections_04b43116db5732008bf8f91ebf96190b</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-06-14 03:42:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
