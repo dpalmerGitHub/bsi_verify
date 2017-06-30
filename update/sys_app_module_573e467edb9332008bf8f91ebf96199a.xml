@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <application display_value="BSI Verify">dfb28777db0332008bf8f91ebf961932</application>
         <assessment/>
         <content_page/>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>573e467edb9332008bf8f91ebf96199a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>BSI Reports</sys_name>
         <sys_overrides/>
         <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
         <sys_update_name>sys_app_module_573e467edb9332008bf8f91ebf96199a</sys_update_name>
         <sys_updated_by>danpal01</sys_updated_by>
-        <sys_updated_on>2017-06-15 19:51:15</sys_updated_on>
+        <sys_updated_on>2017-06-29 15:38:36</sys_updated_on>
         <timeline_page/>
         <title>BSI Reports</title>
         <uncancelable>false</uncancelable>

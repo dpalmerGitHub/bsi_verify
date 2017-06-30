@@ -4,47 +4,36 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:40</sys_created_on>
-            <sys_id>01a21007db2332008bf8f91ebf9619b8</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>84f8675bdb6732008bf8f91ebf961925</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:40</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <text>BSI Details</text>
             <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
         </sys_ui_annotation>
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:40</sys_created_on>
-            <sys_id>49a21007db2332008bf8f91ebf9619b8</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>40f8a75bdb6732008bf8f91ebf9619c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:40</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <text>BSI Work Notes</text>
-            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
-        </sys_ui_annotation>
-        <sys_ui_annotation action="INSERT_OR_UPDATE">
-            <is_plain_text>false</is_plain_text>
-            <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:40</sys_created_on>
-            <sys_id>4da21007db2332008bf8f91ebf9619b8</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:40</sys_updated_on>
-            <text>BSI Close Notes</text>
             <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>0</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>d9a21007db2332008bf8f91ebf9619d3</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>04f8a75bdb6732008bf8f91ebf9619c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -52,13 +41,13 @@
             <element>created_on</element>
             <position>1</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>91a21007db2332008bf8f91ebf9619d4</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>84f8a75bdb6732008bf8f91ebf9619c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -66,13 +55,13 @@
             <element>trigger_configuration_item</element>
             <position>2</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>15a21007db2332008bf8f91ebf9619d4</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>08f8a75bdb6732008bf8f91ebf9619c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -80,13 +69,13 @@
             <element>trigger_subcategory</element>
             <position>3</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>95a21007db2332008bf8f91ebf9619d4</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>88f8a75bdb6732008bf8f91ebf9619c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -94,13 +83,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>19a21007db2332008bf8f91ebf9619d4</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>0cf8a75bdb6732008bf8f91ebf9619c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -108,13 +97,13 @@
             <element>status</element>
             <position>5</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>99a21007db2332008bf8f91ebf9619d4</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>8cf8a75bdb6732008bf8f91ebf9619c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -122,13 +111,13 @@
             <element>assignment_group</element>
             <position>6</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>1da21007db2332008bf8f91ebf9619d4</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>00f8a75bdb6732008bf8f91ebf9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -136,13 +125,13 @@
             <element>assigned_to</element>
             <position>7</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>9da21007db2332008bf8f91ebf9619d4</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>80f8a75bdb6732008bf8f91ebf9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -150,13 +139,13 @@
             <element>closed_by</element>
             <position>8</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>11a21007db2332008bf8f91ebf9619d5</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>04f8a75bdb6732008bf8f91ebf9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -164,181 +153,139 @@
             <element>closed_on</element>
             <position>9</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>91a21007db2332008bf8f91ebf9619d5</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>84f8a75bdb6732008bf8f91ebf9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>linked_to_problem</element>
-            <position>10</position>
-            <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>15a21007db2332008bf8f91ebf9619d5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
-            <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>11</position>
+            <position>10</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>95a21007db2332008bf8f91ebf9619d5</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>08f8a75bdb6732008bf8f91ebf9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>trigger_incidents</element>
-            <position>12</position>
+            <position>11</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>19a21007db2332008bf8f91ebf9619d5</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>88f8a75bdb6732008bf8f91ebf9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>01a21007db2332008bf8f91ebf9619b8</element>
-            <position>13</position>
+            <element>84f8675bdb6732008bf8f91ebf961925</element>
+            <position>12</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>99a21007db2332008bf8f91ebf9619d5</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>0cf8a75bdb6732008bf8f91ebf9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>details</element>
-            <position>14</position>
+            <position>13</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>1da21007db2332008bf8f91ebf9619d5</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>8cf8a75bdb6732008bf8f91ebf9619c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>impact</element>
-            <position>15</position>
+            <position>14</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>9da21007db2332008bf8f91ebf9619d5</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>00f8a75bdb6732008bf8f91ebf9619c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>work_around</element>
-            <position>16</position>
+            <position>15</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>11a21007db2332008bf8f91ebf9619d6</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>80f8a75bdb6732008bf8f91ebf9619c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>public_sms_message</element>
-            <position>17</position>
+            <position>16</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>91a21007db2332008bf8f91ebf9619d6</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>04f8a75bdb6732008bf8f91ebf9619c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>49a21007db2332008bf8f91ebf9619b8</element>
-            <position>18</position>
+            <element>40f8a75bdb6732008bf8f91ebf9619c0</element>
+            <position>17</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>15a21007db2332008bf8f91ebf9619d6</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>84f8a75bdb6732008bf8f91ebf9619c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>work_notes</element>
-            <position>19</position>
+            <position>18</position>
             <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>95a21007db2332008bf8f91ebf9619d6</sys_id>
+            <sys_created_on>2017-06-30 01:00:26</sys_created_on>
+            <sys_id>08f8a75bdb6732008bf8f91ebf9619c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
             <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>4da21007db2332008bf8f91ebf9619b8</element>
-            <position>20</position>
-            <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>19a21007db2332008bf8f91ebf9619d6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
-            <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
-            <sys_user/>
-            <type>annotation</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>resolution</element>
-            <position>21</position>
-            <sys_created_by>danpal01</sys_created_by>
-            <sys_created_on>2017-06-28 14:45:41</sys_created_on>
-            <sys_id>99a21007db2332008bf8f91ebf9619d6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_131279_business_bsi" sys_domain="global" view="Default view">6407033bdb0332008bf8f91ebf96193b</sys_ui_section>
-            <sys_updated_by>danpal01</sys_updated_by>
-            <sys_updated_on>2017-06-28 14:45:41</sys_updated_on>
+            <sys_updated_on>2017-06-30 01:00:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

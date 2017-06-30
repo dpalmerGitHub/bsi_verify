@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>create_problem</action_name>
+        <action_name>save</action_name>
         <active>true</active>
         <client>false</client>
         <comments/>
-        <condition>current.status!=""</condition>
+        <condition/>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -18,43 +18,38 @@
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
-        <name>Create Problem</name>
+        <name>Save</name>
         <onclick/>
-        <order>200</order>
-        <script><![CDATA[var bsiDetails = current.getValue("details");
-var bsiWorkAround = current.getValue("work_around");
-var bsiID = current.getUniqueValue();
-var problem = new GlideRecord("problem");
-problem.setValue("description",bsiDetails);
-problem.setValue("work_around",bsiWorkAround);
-problem.setValue("u_linked_to_bsi",bsiID);
-problem.insert();
+        <order>100</order>
+        <script><![CDATA[if(current.isNewRecord()){
+	current.insert();
+	action.setRedirectURL(current);
+}else{
 current.update();
-action.setRedirectURL("problem.do?sys_id="+problem.sys_id);
-
-]]></script>
-        <show_insert>false</show_insert>
+action.setRedirectURL(current);
+}]]></script>
+        <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>danpal01</sys_created_by>
-        <sys_created_on>2017-06-28 14:44:20</sys_created_on>
+        <sys_created_on>2017-06-29 15:41:55</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>dd0ccc03db2332008bf8f91ebf9619c9</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Create Problem</sys_name>
+        <sys_id>33a8ad13dba332008bf8f91ebf961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Save</sys_name>
         <sys_overrides/>
         <sys_package display_value="Business System Interruptions" source="x_131279_business">5f720b37db0332008bf8f91ebf961969</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Business System Interruptions">5f720b37db0332008bf8f91ebf961969</sys_scope>
-        <sys_update_name>sys_ui_action_dd0ccc03db2332008bf8f91ebf9619c9</sys_update_name>
+        <sys_update_name>sys_ui_action_33a8ad13dba332008bf8f91ebf961958</sys_update_name>
         <sys_updated_by>danpal01</sys_updated_by>
-        <sys_updated_on>2017-06-29 15:48:46</sys_updated_on>
-        <table>x_131279_business_bsi</table>
+        <sys_updated_on>2017-06-29 15:41:55</sys_updated_on>
+        <table>x_131279_business_bsi_exclusions</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

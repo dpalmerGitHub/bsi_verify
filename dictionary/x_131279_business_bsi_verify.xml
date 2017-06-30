@@ -7,9 +7,9 @@
         <element label="Configuration Item" max_length="32" name="configuration_item" reference="cmdb_ci" type="reference"/>
         <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Created On" max_length="40" name="created_on" read_only="true" type="glide_date_time" use_dynamic_default="true"/>
         <element label="Enter Unverified BSI Number" max_length="32" name="enter_unverified_bsi_number" reference="x_131279_business_bsi" type="reference"/>
-        <element label="Incident 1" max_length="32" name="incident_1" read_only="true" reference="incident" type="reference"/>
-        <element label="Incident 2" max_length="32" name="incident_2" read_only="true" reference="incident" type="reference"/>
-        <element label="Incident 3" max_length="32" name="incident_3" read_only="true" reference="incident" type="reference"/>
+        <element label="Incident 1" max_length="32" name="incident_1" reference="incident" type="reference"/>
+        <element label="Incident 2" max_length="32" name="incident_2" reference="incident" type="reference"/>
+        <element label="Incident 3" max_length="32" name="incident_3" reference="incident" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" read_only="true" type="string">
             <choice>
